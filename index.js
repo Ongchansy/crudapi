@@ -12,6 +12,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
 // create a route for sort data and order
 app.get("/api/todoList", (req, res) => {
   const { sort, order } = req.query;
