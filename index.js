@@ -92,6 +92,6 @@ app.put("/api/todoList/:id", async (req, res) => {
 });
 
 // listen for requests
-app.listen(5000, () => {
+app.listen(3000, () => {
   console.log("Server is running on port 5000");
 });
